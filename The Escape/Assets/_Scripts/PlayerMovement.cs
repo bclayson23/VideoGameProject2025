@@ -15,10 +15,24 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
+        // Skip movement & mouse look if UI is active
+        if (UIManager.isUIActive)
+        {
+            // Ensure cursor is visible and unlocked
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            return;
+        }
+
+        // Cursor hidden & locked during gameplay
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         // Mouse look
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
