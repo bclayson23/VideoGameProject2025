@@ -20,11 +20,5 @@ public class EnemyChaseNav : MonoBehaviour
 
         // Continuously update the destination to the player's position
         agent.SetDestination(target.position);
-
-        // Check for catch
-        if (Vector3.Distance(transform.position, target.position) < catchDistance)
-        {
-            FindObjectOfType<JumpscareManager>().TriggerJumpscare();
-        }
     }
 }
