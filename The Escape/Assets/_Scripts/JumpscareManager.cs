@@ -15,6 +15,8 @@ public class JumpscareManager : MonoBehaviour
 
     public void TriggerJumpscare()
     {
+        jumpscareImage.gameObject.SetActive(true);
+
         jumpscareImage.enabled = true;
         jumpscareImage.color = Color.white;
         Debug.Log("JUMPSCARE IMAGE FORCED ON");
