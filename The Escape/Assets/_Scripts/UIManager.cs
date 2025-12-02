@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
         Debug.Log("Cursor.visible: " + Cursor.visible + " | lockState: " + Cursor.lockState);
     }
 
+    public AudioSource menuMusic;
 
     public void StartGame()
     {
@@ -32,6 +33,9 @@ public class UIManager : MonoBehaviour
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        if (menuMusic != null)
+            menuMusic.Stop();
     }
 
     public void ShowGameOver()
@@ -40,10 +44,15 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public AudioSource winMusic;
+
     public void ShowWinScreen()
     {
         ShowScreen(winUI);
         Time.timeScale = 0f;
+
+        if (winMusic != null)
+            winMusic.Play();
     }
 
     public void ReturnToMenu()

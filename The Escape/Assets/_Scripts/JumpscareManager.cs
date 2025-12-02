@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class JumpscareManager : MonoBehaviour
 {
     public Image jumpscareImage;
-    //public AudioSource jumpscareSound;
+    public AudioSource jumpscareSound;
     public float fadeInSpeed = 2f;
     private bool triggered = false;
 
@@ -37,7 +37,7 @@ public class JumpscareManager : MonoBehaviour
 
     private IEnumerator JumpscareSequence()
     {
-        //jumpscareSound?.Play();
+        jumpscareSound?.Play();
 
         while (jumpscareImage.color.a < 1f)
         {
