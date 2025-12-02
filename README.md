@@ -24,11 +24,11 @@ If you reach the maze, you win.
 If John Pork catches you, you die!
 
 
-###How To Play!
+### How To Play!
 Use the arrow keys to navigate the maze! You must find the exit! Dont let JP catch you!
 
 
-###Images
+### Images
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/1d8bc1c4-5b4f-44ff-8de1-62d8eefe940d" />
 <img width="2544" height="1439" alt="image" src="https://github.com/user-attachments/assets/138f2d35-d522-4625-a9e0-84e7428b338a" />
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/87efe5a0-5542-4d83-b110-150708e17146" />
@@ -36,3 +36,5 @@ Use the arrow keys to navigate the maze! You must find the exit! Dont let JP cat
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/7931a164-ecdb-405f-b28d-fbde37976722" />
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/b43f4304-949c-4726-aa1e-5730770bc0d2" />
 
+### Reflection
+This project gave me some challenges with the build and the different mechanics. Working through this was a tedious, yet rewarding task. I had fun building this. I hope people enjoy this fun game.
